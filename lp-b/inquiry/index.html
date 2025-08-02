@@ -8,36 +8,35 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-green-50 min-h-screen flex flex-col items-center py-8 px-4">
+<body class="bg-green-50 min-h-screen flex flex-col items-center py-4 px-2">
 
     <div id="customAlert" class="hidden custom-alert">
-        <p id="customAlertMessage" class="text-lg font-semibold text-gray-800"></p>
+        <p id="customAlertMessage" class="text-xl font-semibold text-gray-800"></p>
         <button id="customAlertClose" class="custom-alert-button">OK</button>
     </div>
     <div id="customAlertOverlay" class="hidden custom-alert-overlay"></div>
 
-    <header class="w-full max-w-4xl mx-auto px-4 mb-6 flex items-center justify-center">
-        <img src="https://i.postimg.cc/fTXzp2TX/rookylogo.png" alt="Rooky Logo" class="h-12 w-auto object-contain">
+    <header class="w-full max-w-5xl mx-auto px-2 mb-4 flex items-center justify-center">
+        <img src="https://i.postimg.cc/fTXzp2TX/rookylogo.png" alt="Rooky Logo" class="h-14 w-auto object-contain">
     </header>
 
-    <section class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-8 mb-8 text-center">
-        <h1 class="text-3xl font-bold text-green-700 mb-4">学生専門求人サービス</h1>
+    <section class="w-full max-w-5xl bg-white shadow-lg rounded-lg p-6 mb-6 text-center">
+        <h1 class="text-4xl font-bold text-green-700 mb-6">学生専門求人サービス</h1>
         <div class="text-left">
-            <h3 class="text-lg font-semibold text-green-600 mb-2 text-center">企業のご担当者様へ</h3>
-            <p class="text-gray-700 mb-4 text-center">この度は弊社サービス「Rooky(ルーキー)」をご検討いただき誠にありがとうございます。</p>
-            <p class="text-gray-700 mb-4 text-center">以下ご入力後、資料をダウンロードいただけます。</p>
-            <p class="text-gray-700 mb-4 text-center">ご不明な点や、サービスの詳細などございましたらお気軽にお問い合わせください</p>
-            <p class="text-gray-700 mb-4 text-center">お問い合せいただいた内容は、担当者から3営業日以内にご連絡いたします。</p>
+            <h3 class="text-xl font-semibold text-green-600 mb-3 text-center">企業のご担当者様へ</h3>
+            <p class="text-lg text-gray-700 mb-4 text-center">この度は弊社サービス「Rooky(ルーキー)」をご検討いただき誠にありがとうございます。</p>
+            <p class="text-lg text-gray-700 mb-4 text-center">以下ご入力後、資料をダウンロードいただけます。</p>
+            <p class="text-lg text-gray-700 mb-4 text-center">ご不明な点や、サービスの詳細などございましたらお気軽にお問い合わせください</p>
+            <p class="text-lg text-gray-700 mb-4 text-center">お問い合せいただいた内容は、担当者から3営業日以内にご連絡いたします。</p>
         </div>
     </section>
 
-    <section class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-8 mb-8">
-        <h2 class="text-2xl font-semibold text-green-600 mb-4 text-center">お問い合わせフォーム</h2>
-        <form id="inquiryForm" class="space-y-4">
-            <!-- ... (select, inputなどのフォーム項目はすべてそのまま) ... -->
+    <section class="w-full max-w-5xl bg-white shadow-lg rounded-lg p-6 mb-6">
+        <h2 class="text-4xl font-semibold text-green-600 mb-6 text-center">お問い合わせフォーム</h2>
+        <form id="inquiryForm" class="space-y-6">
             <div>
-                <label for="inquiryType" class="block text-sm font-medium text-gray-700">お問い合わせ種別<span class="text-red-500">*</span></label>
-                <select id="inquiryType" name="inquiryType" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="inquiryType" class="block text-lg font-medium text-gray-700">お問い合わせ種別<span class="text-red-500">*</span></label>
+                <select id="inquiryType" name="inquiryType" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-lg py-3 px-3">
                     <option value="">選択してください</option>
                     <option value="資料請求">資料請求</option>
                     <option value="サービスについて">サービスについて</option>
@@ -45,32 +44,32 @@
                 </select>
             </div>
             <div>
-                <label for="fullName" class="block text-sm font-medium text-gray-700">姓名<span class="text-red-500">*</span></label>
-                <input type="text" name="fullName" id="fullName" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="fullName" class="block text-base font-medium text-gray-700">姓名<span class="text-red-500">*</span></label>
+                <input type="text" name="fullName" id="fullName" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3">
             </div>
             <div>
-                <label for="furigana" class="block text-sm font-medium text-gray-700">姓名(フリガナ)<span class="text-red-500">*</span></label>
-                <input type="text" name="furigana" id="furigana" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="furigana" class="block text-base font-medium text-gray-700">姓名(フリガナ)<span class="text-red-500">*</span></label>
+                <input type="text" name="furigana" id="furigana" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3">
             </div>
             <div>
-                <label for="companyName" class="block text-sm font-medium text-gray-700">会社名<span class="text-red-500">*</span></label>
-                <input type="text" name="companyName" id="companyName" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="companyName" class="block text-base font-medium text-gray-700">会社名<span class="text-red-500">*</span></label>
+                <input type="text" name="companyName" id="companyName" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3">
             </div>
             <div>
-                <label for="departmentName" class="block text-sm font-medium text-gray-700">ご担当者の役職<span class="text-red-500">*</span></label>
-                <input type="text" name="departmentName" id="departmentName" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="departmentName" class="block text-base font-medium text-gray-700">ご担当者の役職<span class="text-red-500">*</span></label>
+                <input type="text" name="departmentName" id="departmentName" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3">
             </div>
             <div>
-                <label for="email" class="block text-sm font-medium text-gray-700">Eメールアドレス<span class="text-red-500">*</span></label>
-                <input type="email" name="email" id="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="email" class="block text-base font-medium text-gray-700">Eメールアドレス<span class="text-red-500">*</span></label>
+                <input type="email" name="email" id="email" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3">
             </div>
             <div>
-                <label for="phoneNumber" class="block text-sm font-medium text-gray-700">携帯番号 (090-1234-5678)<span class="text-red-500">*</span></label>
-                <input type="tel" name="phoneNumber" id="phoneNumber" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="phoneNumber" class="block text-base font-medium text-gray-700">携帯番号 (090-1234-5678)<span class="text-red-500">*</span></label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3">
             </div>
             <div>
-                <label for="detailType" class="block text-sm font-medium text-gray-700">お問い合わせ内容の種類<span class="text-red-500">*</span></label>
-                <select id="detailType" name="detailType" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm">
+                <label for="detailType" class="block text-base font-medium text-gray-700">お問い合わせ内容の種類<span class="text-red-500">*</span></label>
+                <select id="detailType" name="detailType" required class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3">
                     <option value="">選択してください</option>
                     <option value="掲載を希望">掲載を希望</option>
                     <option value="利用検討中">利用検討中</option>
@@ -78,17 +77,17 @@
                 </select>
             </div>
             <div>
-                <label for="message" class="block text-sm font-medium text-gray-700">お問い合わせ詳細</label>
-                <textarea name="message" id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 sm:text-sm"></textarea>
+                <label for="message" class="block text-base font-medium text-gray-700">お問い合わせ詳細</label>
+                <textarea name="message" id="message" rows="6" class="mt-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500 text-base py-3 px-3"></textarea>
             </div>
             <div class="flex items-center">
-                <input type="checkbox" id="agreeCheckbox" name="agreeCheckbox" required class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded">
-                <label for="agreeCheckbox" class="ml-2 block text-sm text-gray-900">
+                <input type="checkbox" id="agreeCheckbox" name="agreeCheckbox" required class="h-5 w-5 text-green-600 focus:ring-green-500 border-gray-300 rounded">
+                <label for="agreeCheckbox" class="ml-3 block text-base text-gray-900">
                     <a href="https://rookyworks.jp/privacy-policy/" target="_blank" class="text-green-600 underline">プライバシーポリシー</a>に同意します <span class="text-red-500">*</span>
                 </label>
             </div>
             
-            <button type="submit" id="submitForm" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-md transition duration-300 ease-in-out shadow-md">上記に同意して送信</button>
+            <button type="submit" id="submitForm" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-6 rounded-md transition duration-300 ease-in-out shadow-md text-lg">上記に同意して送信</button>
         </form>
     </section>
     <script src="script.js"></script>
